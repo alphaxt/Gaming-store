@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Nexus Gaming Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="gamesstyle.css">
+    
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <nav>
+            <div class="logo" style="cursor:pointer;" onclick="window.location.href='htmlweb.html'" title="Go to Home">
+                <i class="fas fa-gamepad"></i>
+                <span>Nexus Gaming</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="htmlweb.html">Home</a>
+                <a href="games.html" class="active">Games</a>
+                <a href="consoles.html">Consoles</a>
+                <a href="accessories.html">Accessories</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search games...">
+                </div>
+                
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge">0</span>
+                </div>
+                
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- GAMES SECTION -->
+    <section class="games">
+        <div class="section-title">
+            <h2>Our Game Collection</h2>
+            <p>Discover the latest and greatest games across all platforms</p>
+        </div>
+        
+        <div class="filter-bar">
+            <div class="filter-group">
+                <div class="filter-btn active">
+                    <i class="fas fa-gamepad"></i>
+                    All Games
+                </div>
+                <div class="filter-btn">
+                    <i class="fas fa-star"></i>
+                    New Releases
+                </div>
+                <div class="filter-btn">
+                    <i class="fas fa-fire"></i>
+                    Best Sellers
+                </div>
+                <div class="filter-btn">
+                    <i class="fas fa-tag"></i>
+                    On Sale
+                </div>
+                <div class="filter-btn">
+                    <i class="fas fa-calendar-check"></i>
+                    Pre-Orders
+                </div>
+            </div>
+            
+            <div class="view-toggle">
+                <div class="view-btn active">
+                    <i class="fas fa-th-large"></i>
+                </div>
+                <div class="view-btn">
+                    <i class="fas fa-th-list"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-grid">
+            <div class="product">
+                <div class="product-badge">New</div>
+                <div class="product-image">
+                    <img src="images/tekken_8.jpg" alt="Tekken 8">
+                </div>
+                <h3 class="product-title">Tekken 8</h3>
+                <div class="product-price">5,000 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Buy
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-badge">Hot</div>
+                <div class="product-image">
+                    <img src="images/gta_vi.jpg" alt="Grand Theft Auto VI">
+                </div>
+                <h3 class="product-title">Grand Theft Auto VI</h3>
+                <div class="product-price">6,000 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Buy
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-badge">New</div>
+                <div class="product-image">
+                    <img src="images/black_myth.jpg" alt="Black Myth">
+                </div>
+                <h3 class="product-title">Black Myth</h3>
+                <div class="product-price">4,500 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Buy
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-badge">Pre-Order</div>
+                <div class="product-image">
+                    <a href="civilization.html">
+                        <img src="images/civilization_vii.jpg" alt="Civilization VII">
+                    </a>
+                </div>
+                <h3 class="product-title">
+                    <a href="civilization.html">Civilization VII</a>
+                </h3>
+                <div class="product-price">7,000 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Pre-order
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/dragons_dogma.jpg" alt="Dragon's Dogma">
+                </div>
+                <h3 class="product-title">Dragon's Dogma</h3>
+                <div class="product-price">6,500 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Buy
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-badge">Sale</div>
+                <div class="product-image">
+                    <img src="images/elden_ring.jpg" alt="Elden Ring">
+                </div>
+                <h3 class="product-title">Elden Ring</h3>
+                <div class="product-price">5,500 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Buy
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/final_fantasy.jpg" alt="Final Fantasy">
+                </div>
+                <h3 class="product-title">Final Fantasy</h3>
+                <div class="product-price">6,000 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Buy
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-badge">New</div>
+                <div class="product-image">
+                    <img src="images/hades_ii.jpg" alt="Hades II">
+                </div>
+                <h3 class="product-title">Hades II</h3>
+                <div class="product-price">7,500 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Buy
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-badge">Best Seller</div>
+                <div class="product-image">
+                    <img src="images/elden_ring.jpg" alt="Elden Ring">
+                </div>
+                <h3 class="product-title">Elden Ring</h3>
+                <div class="product-price">8,000 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Buy
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/hollow_knight.jpg" alt="Hollow Knight">
+                </div>
+                <h3 class="product-title">Hollow Knight</h3>
+                <div class="product-price">6,000 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Buy
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-badge">Pre-Order</div>
+                <div class="product-image">
+                    <a href="kingdomcome.html">
+                        <img src="images/kingdom_come.jpg" alt="Kingdom Come: Deliverance II">
+                    </a>
+                </div>
+                <h3 class="product-title">
+                    <a href="kingdomcome.html">Kingdom Come: Deliverance II</a>
+                </h3>
+                <div class="product-price">7,000 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Pre-order
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/metroid_prime.jpg" alt="Metroid Prime">
+                </div>
+                <h3 class="product-title">Metroid Prime</h3>
+                <div class="product-price">3,000 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Buy
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-badge">New</div>
+                <div class="product-image">
+                    <a href="monsterhunter.html">
+                        <img src="images/monster_hunter.jpg" alt="Monster Hunter Wilds">
+                    </a>
+                </div>
+                <h3 class="product-title">
+                    <a href="monsterhunter.html">Monster Hunter Wilds</a>
+                </h3>
+                <div class="product-price">3,000 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Buy
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-badge">Sale</div>
+                <div class="product-image">
+                    <a href="gta5.html">
+                        <img src="images/pic6.jpg" alt="GTA 5">
+                    </a>
+                </div>
+                <h3 class="product-title">
+                    <a href="gta5.html">Grand Theft Auto 5</a>
+                </h3>
+                <div class="product-price">3,000 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Buy
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-badge">Hot</div>
+                <div class="product-image">
+                    <a href="counterstrike2.html">
+                        <img src="images/pic7.jpg" alt="Counter Strike 2">
+                    </a>
+                </div>
+                <h3 class="product-title">
+                    <a href="counterstrike2.html">Counter Strike 2</a>
+                </h3>
+                <div class="product-price">6,000 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Buy
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-image">
+                    <a href="freefire.html">
+                        <img src="images/pic10.jpg" alt="Free Fire">
+                    </a>
+                </div>
+                <h3 class="product-title">
+                    <a href="freefire.html">Free Fire</a>
+                </h3>
+                <div class="product-price">5,000 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Buy
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-badge">New</div>
+                <div class="product-image">
+                    <img src="images/star_wars.jpg" alt="Star Wars">
+                </div>
+                <h3 class="product-title">Star Wars</h3>
+                <div class="product-price">9,500 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Buy
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-badge">Pre-Order</div>
+                <div class="product-image">
+                    <img src="images/wolverine.jpg" alt="Wolverine">
+                </div>
+                <h3 class="product-title">Wolverine</h3>
+                <div class="product-price">4,500 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Pre-order
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-badge">Best Seller</div>
+                <div class="product-image">
+                    <img src="images/zelda.jpg" alt="Zelda">
+                </div>
+                <h3 class="product-title">Zelda</h3>
+                <div class="product-price">2,500 PKR</div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add
+                    </button>
+                    <button class="buy-now">
+                        <i class="fas fa-bolt"></i> Buy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- NEWSLETTER SECTION -->
+    <section class="newsletter">
+        <h3>Join Our Gaming Community</h3>
+        <p>Subscribe to our newsletter and get exclusive deals, new game alerts, and special offers delivered straight to your inbox.</p>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button>Subscribe</button>
+        </div>
+    </section>
+    
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>Nexus Gaming</h4>
+                <p style="color: var(--secondary); margin-bottom: 1.5rem;">Your ultimate destination for all gaming needs. We offer the latest games, consoles, and accessories at competitive prices.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="htmlweb.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="games.html?filter=New-releases"><i class="fas fa-chevron-right"></i> New-releases</a></li>
+                    <li><a href="games.html?filter=pre-orders"><i class="fas fa-chevron-right"></i> Pre-orders</a></li>
+                    <li><a href="special.html"><i class="fas fa-chevron-right"></i> Special Offers</a></li>
+                    <li><a href="Gamingnews.html"><i class="fas fa-chevron-right"></i> Gaming News</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Customer Service</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Shipping Policy</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Returns & Refunds</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Track Order</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> 123 Gaming Street, Virtual City</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i> +1 (555) 123-4567</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> support@nexusgaming.com</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 10PM</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Sat-Sun: 10AM - 8PM</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Nexus Gaming Store. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: var(--accent);"></i> for Gamers</p>
+        </div>
+    </footer>
+    
+    
+    <script defer src="gamesscript.js"></script>
+</body>
+</html>

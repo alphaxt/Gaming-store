@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers - Nexus Gaming Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="specialstyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" onclick="window.location.href='htmlweb.html'">
+                <i class="fas fa-gamepad"></i>
+                <span>Nexus Gaming</span>
+            </div>
+            <div class="nav-links">
+                <a href="games.html">Games</a>
+                <a href="consoles.html">Consoles</a>
+                <a href="accessories.html">Accessories</a>
+                <a href="special.html" class="active">Special Offers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <div class="cart" title="View Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="special-offers">
+        <div class="special-header">
+            <h1>Special Offers & Limited Editions</h1>
+            <p>Discover exclusive deals, limited edition items, and special bundles available for a limited time only!</p>
+        </div>
+
+        <div class="countdown">
+            <h3 class="countdown-title">Flash Sale Ends In:</h3>
+            <div class="countdown-timer">
+                <div class="countdown-item">
+                    <div class="countdown-number">24</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">45</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">30</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="special-grid">
+            <!-- Limited Edition Console -->
+            <div class="special-item">
+                <span class="special-badge">Limited Edition</span>
+                <div class="special-image">
+                    <img src="images/ps5_slim_disk.jpg" alt="PS5 Limited Edition">
+                </div>
+                <h3 class="special-title">PS5 Spider-Man 2 Limited Edition Bundle</h3>
+                <div class="special-price">
+                    <span class="original-price">$599.99</span>
+                    <span class="discount-price">$549.99</span>
+                </div>
+                <p class="special-description">Exclusive Spider-Man 2 themed PS5 console with custom design, controller, and game included.</p>
+                <div class="special-actions">
+                    <button class="btn btn-primary">Pre-order Now</button>
+                    <button class="btn btn-secondary">More Info</button>
+                </div>
+            </div>
+
+            <!-- Special Edition Game -->
+            <div class="special-item">
+                <span class="special-badge">Collector's Edition</span>
+                <div class="special-image">
+                    <img src="images/final_fantasy.jpg" alt="Final Fantasy XVI">
+                </div>
+                <h3 class="special-title">Final Fantasy XVI Collector's Edition</h3>
+                <div class="special-price">
+                    <span class="original-price">$199.99</span>
+                    <span class="discount-price">$169.99</span>
+                </div>
+                <p class="special-description">Includes art book, soundtrack, steelbook case, and exclusive in-game content.</p>
+                <div class="special-actions">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-secondary">Details</button>
+                </div>
+            </div>
+
+            <!-- Gaming Accessory Bundle -->
+            <div class="special-item">
+                <span class="special-badge">Bundle Deal</span>
+                <div class="special-image">
+                    <img src="images/headset.jpg" alt="Gaming Accessories Bundle">
+                </div>
+                <h3 class="special-title">Pro Gamer Bundle</h3>
+                <div class="special-price">
+                    <span class="original-price">$299.99</span>
+                    <span class="discount-price">$249.99</span>
+                </div>
+                <p class="special-description">Premium gaming headset, mechanical keyboard, and gaming mouse combo.</p>
+                <div class="special-actions">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Countdown Timer Logic
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const endTime = new Date("August 15, 2025 23:59:59").getTime();
+            const timeLeft = endTime - now;
+
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.querySelector('.countdown-timer').innerHTML = `
+                <div class="countdown-item">
+                    <div class="countdown-number">${hours}</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">${minutes}</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">${seconds}</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            `;
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Cart logic
+        let cartCount = 0;
+        const cartBadge = document.querySelector('.cart-badge');
+        document.querySelectorAll('.btn-primary').forEach(button => {
+            button.addEventListener('click', function() {
+                cartCount++;
+                cartBadge.textContent = cartCount;
+                this.innerHTML = '<i class="fas fa-check"></i> Added!';
+                setTimeout(() => {
+                    this.innerHTML = 'Add to Cart';
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>

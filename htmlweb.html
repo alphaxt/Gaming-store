@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Gaming Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="htmlstyle.css">
+   
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <nav>
+            <div class="logo" style="cursor:pointer;" onclick="window.location.href='htmlweb.html'" title="Go to Home">
+                <i class="fas fa-gamepad"></i>
+                <span>Nexus Gaming</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="htmlweb.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="consoles.html">Consoles</a>
+                <a href="accessories.html">Accessories</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search games...">
+                </div>
+                
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge">0</span>
+                </div>
+                
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1 class="animated">The Ultimate Gaming Experience Awaits</h1>
+        <p class="animated delay-1">Discover the latest games, consoles, and accessories at unbeatable prices. Join millions of gamers worldwide.</p>
+        <div class="hero-buttons">
+            <button class="btn btn-primary animated delay-2">Explore Collection</button>
+            <button class="btn btn-secondary animated delay-3">View Deals</button>
+        </div>
+    </section>
+    
+    <!-- PRODUCTS SECTION -->
+    <section class="products">
+        <div class="section-title">
+            <h2>Featured Games</h2>
+        </div>
+        
+        <div class="category-tabs">
+            <div class="tab active">All Games</div>
+            <div class="tab" id="new-releases">New Releases</div>
+            <div class="tab">Best Sellers</div>
+            <div class="tab" id="pre-orders">Pre-Orders</div>
+            <div class="tab">On Sale</div>
+        </div>
+        
+        <div class="product-grid">
+            <div class="product animated" data-category="new-releases">
+                <a href="freefire.html">
+                    <img src="images/pic10.jpg" alt="Free Fire">
+                </a>
+                <div class="product-badge">New</div>
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Free Fire MAX</h3>
+                    <div class="product-platforms">
+                        <span class="platform-tag">PC</span>
+                        <span class="platform-tag">Mobile</span>
+                        <span class="platform-tag">PS5</span>
+                    </div>
+                    <div class="product-price">$29.99</div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product animated delay-1" data-category="best-sellers">
+                <a href="counterstrike2.html">
+                    <img src="images/pic7.jpg" alt="Counter Strike 2">
+                </a>
+                <div class="product-badge">Hot</div>
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Counter Strike 2</h3>
+                    <div class="product-platforms">
+                        <span class="platform-tag">PC</span>
+                        <span class="platform-tag">Xbox</span>
+                    </div>
+                    <div class="product-price">$49.99</div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product animated delay-2" data-category="on-sale">
+                 <a href="gta5.html">
+                    <img src="images/pic6.jpg" alt="Grand Theft Auto V">
+                </a>
+                <div class="product-badge">Hot</div>
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Grand Theft Auto V</h3>
+                    <div class="product-platforms">
+                        <span class="platform-tag">PS5</span>
+                        <span class="platform-tag">Xbox</span>
+                        <span class="platform-tag">PC</span>
+                    </div>
+                    <div class="product-price">$39.99 <span style="text-decoration: line-through; font-size: 1rem; color: #ccc;">$59.99</span></div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product animated delay-3" data-category="pre-orders">
+                <div class="product-badge">Pre-order</div>
+                <div class="product-image">
+                    <img src="images/cyber.jfif" alt="Cyber Nexus">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Cyber Nexus</h3>
+                    <div class="product-platforms">
+                        <span class="platform-tag">PS5</span>
+                        <span class="platform-tag">Xbox</span>
+                        <span class="platform-tag">PC</span>
+                    </div>
+                    <div class="product-price">$59.99</div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Pre-order
+                        </button>
+                        <button class="wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional games -->
+            <div class="product animated delay-4" data-category="new-releases">
+                <a href="elden_ring.html">
+                    <img src="images/elden_ring.jpg" alt="Elden Ring">
+                </a>
+                <div class="product-badge">New</div>
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Elden Ring</h3>
+                    <div class="product-platforms">
+                        <span class="platform-tag">PC</span>
+                        <span class="platform-tag">PS5</span>
+                        <span class="platform-tag">Xbox</span>
+                    </div>
+                    <div class="product-price">$69.99</div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product animated delay-5" data-category="best-sellers">
+                <a href="monsterhunter.html">
+                    <img src="images/monster_hunter.jpg" alt="Monster Hunter Rise">
+                </a>
+                <div class="product-badge">Hot</div>
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Monster Hunter Rise</h3>
+                    <div class="product-platforms">
+                        <span class="platform-tag">Switch</span>
+                        <span class="platform-tag">PC</span>
+                    </div>
+                    <div class="product-price">$49.99</div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product animated delay-6" data-category="on-sale">
+                <a href="hollow_knight.html">
+                    <img src="images/hollow_knight.jpg" alt="Hollow Knight">
+                </a>
+                <div class="product-badge">On Sale</div>
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Hollow Knight</h3>
+                    <div class="product-platforms">
+                        <span class="platform-tag">PC</span>
+                        <span class="platform-tag">Switch</span>
+                    </div>
+                    <div class="product-price">$14.99 <span style="text-decoration: line-through; font-size: 1rem; color: #ccc;">$19.99</span></div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product animated delay-7" data-category="pre-orders">
+                <a href="star_wars.html">
+                    <img src="images/star_wars.jpg" alt="Star Wars Outlaws">
+                </a>
+                <div class="product-badge">Pre-order</div>
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Star Wars Outlaws</h3>
+                    <div class="product-platforms">
+                        <span class="platform-tag">PS5</span>
+                        <span class="platform-tag">Xbox</span>
+                        <span class="platform-tag">PC</span>
+                    </div>
+                    <div class="product-price">$69.99</div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Pre-order
+                        </button>
+                        <button class="wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product animated delay-8" data-category="new-releases">
+                <a href="tekken8.html">
+                    <img src="images/tekken_8.jpg" alt="Tekken 8">
+                </a>
+                <div class="product-badge">New</div>
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Tekken 8</h3>
+                    <div class="product-platforms">
+                        <span class="platform-tag">PS5</span>
+                        <span class="platform-tag">Xbox</span>
+                        <span class="platform-tag">PC</span>
+                    </div>
+                    <div class="product-price">$59.99</div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product animated delay-9" data-category="best-sellers">
+                <a href="kingdomcome.html">
+                    <img src="images/kingdom_come.jpg" alt="Kingdom Come: Deliverance">
+                </a>
+                <div class="product-badge">Hot</div>
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Kingdom Come: Deliverance</h3>
+                    <div class="product-platforms">
+                        <span class="platform-tag">PC</span>
+                        <span class="platform-tag">PS5</span>
+                    </div>
+                    <div class="product-price">$34.99</div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product animated delay-10" data-category="on-sale">
+                <a href="dragons_dogma.html">
+                    <img src="images/dragons_dogma.jpg" alt="Dragon's Dogma 2">
+                </a>
+                <div class="product-badge">On Sale</div>
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Dragon's Dogma 2</h3>
+                    <div class="product-platforms">
+                        <span class="platform-tag">PC</span>
+                        <span class="platform-tag">PS5</span>
+                    </div>
+                    <div class="product-price">$49.99 <span style="text-decoration: line-through; font-size: 1rem; color: #ccc;">$59.99</span></div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product animated delay-11" data-category="pre-orders">
+                <a href="black_myth.html">
+                    <img src="images/black_myth.jpg" alt="Black Myth: Wukong">
+                </a>
+                <div class="product-badge">Pre-order</div>
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Black Myth: Wukong</h3>
+                    <div class="product-platforms">
+                        <span class="platform-tag">PC</span>
+                        <span class="platform-tag">PS5</span>
+                        <span class="platform-tag">Xbox</span>
+                    </div>
+                    <div class="product-price">$69.99</div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Pre-order
+                        </button>
+                        <button class="wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product animated delay-12" data-category="new-releases">
+                <a href="zelda.html">
+                    <img src="images/zelda.jpg" alt="The Legend of Zelda: Tears of the Kingdom">
+                </a>
+                <div class="product-badge">New</div>
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3 class="product-title">The Legend of Zelda: Tears of the Kingdom</h3>
+                    <div class="product-platforms">
+                        <span class="platform-tag">Switch</span>
+                    </div>
+                    <div class="product-price">$59.99</div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- NEWSLETTER SECTION -->
+    <section class="newsletter">
+        <h3>Join Our Gaming Community</h3>
+        <p>Subscribe to our newsletter and get exclusive deals, new game alerts, and special offers delivered straight to your inbox.</p>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button>Subscribe</button>
+        </div>
+    </section>
+    
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>Nexus Gaming</h4>
+                <p style="color: var(--secondary); margin-bottom: 1.5rem;">Your ultimate destination for all gaming needs. We offer the latest games, consoles, and accessories at competitive prices.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="htmlweb.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="htmlweb.html#new-releases"><i class="fas fa-chevron-right"></i> New Releases</a></li>
+                    <li><a href="htmlweb.html#pre-orders"><i class="fas fa-chevron-right"></i> Pre-orders</a></li>
+                    <li><a href="special.html"><i class="fas fa-chevron-right"></i> Special Offers</a></li>
+                    <li><a href="Gamingnews.html"><i class="fas fa-chevron-right"></i> Gaming News</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Customer Service</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Shipping Policy</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Returns & Refunds</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Track Order</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> 123 Gaming Street, Virtual City</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i> +1 (555) 123-4567</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> support@nexusgaming.com</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 10PM</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Sat-Sun: 10AM - 8PM</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Nexus Gaming Store. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: var(--accent);"></i> for Gamers</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile navigation toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // ======= PRODUCT FILTERING LOGIC =======
+        const tabs = document.querySelectorAll('.tab');
+        const products = document.querySelectorAll('.product');
+
+        // Assign categories to each product (add data-category attribute in HTML for each product)
+        // Example: <div class="product" data-category="new-releases">
+        // You can add multiple categories separated by comma: data-category="new-releases,best-sellers"
+
+        // Update your HTML for each product like this:
+        // <div class="product animated" data-category="new-releases">
+        // <div class="product animated delay-1" data-category="best-sellers">
+        // <div class="product animated delay-2" data-category="on-sale">
+        // <div class="product animated delay-3" data-category="pre-orders">
+
+        // Filtering logic
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                tabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                const filter = this.textContent.trim().toLowerCase().replace(/ /g, '-');
+
+                products.forEach(product => {
+                    const categories = (product.getAttribute('data-category') || '').split(',');
+                    if (filter === 'all-games' || categories.includes(filter)) {
+                        product.style.display = '';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Add to cart animation
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Animation effect
+                this.innerHTML = '<i class="fas fa-check"></i> Added!';
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-shopping-cart"></i> Add to Cart';
+                }, 2000);
+
+                // Update cart badge
+                const badge = document.querySelector('.cart-badge');
+                let count = parseInt(badge.textContent);
+                badge.textContent = count + 1;
+
+                // Add animation to badge
+                badge.style.transform = 'scale(1.5)';
+                setTimeout(() => {
+                    badge.style.transform = 'scale(1)';
+                }, 300);
+            });
+        });
+
+        // Wishlist functionality
+        const wishlistButtons = document.querySelectorAll('.wishlist');
+        wishlistButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.replace('far', 'fas');
+                    icon.style.color = '#fdcb6e';
+
+                    // Animation
+                    this.style.transform = 'scale(1.2)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 300);
+                } else {
+                    icon.classList.replace('fas', 'far');
+                    icon.style.color = '';
+                }
+            });
+        });
+
+        // Newsletter form submission
+        document.querySelector('.newsletter-form button').addEventListener('click', function() {
+            const emailInput = document.querySelector('.newsletter-form input');
+            if (emailInput.value && emailInput.value.includes('@')) {
+                emailInput.value = '';
+                this.textContent = 'Subscribed!';
+                this.style.background = 'var(--success)';
+
+                setTimeout(() => {
+                    this.textContent = 'Subscribe';
+                    this.style.background = '';
+                }, 2000);
+            } else {
+                emailInput.style.borderColor = '#ff7675';
+                setTimeout(() => {
+                    emailInput.style.borderColor = '';
+                }, 2000);
+            }
+        });
+
+        // Scroll to tab if hash present
+        document.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash;
+            if (hash === '#new-releases' || hash === '#pre-orders') {
+                const tabs = document.querySelectorAll('.tab');
+                tabs.forEach(tab => tab.classList.remove('active'));
+                // Find the tab whose text matches the hash (case-insensitive, hyphens)
+                const tabText = hash.replace('#', '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                const targetTab = Array.from(tabs).find(tab => tab.textContent.trim().toLowerCase().replace(/ /g, '-') === hash.replace('#', ''));
+                if (targetTab) {
+                    targetTab.classList.add('active');
+                    targetTab.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    targetTab.click();
+                }
+            }
+        });
+    </script>
+    <script defer src="script.js"></script>
+</body>
+</html>
