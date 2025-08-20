@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming News - Nexus Gaming Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="gamingnwesstyle.css">
+    
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <nav>
+            <div class="logo" style="cursor:pointer;" onclick="window.location.href='htmlweb.html'" title="Go to Home">
+                <i class="fas fa-gamepad"></i>
+                <span>Nexus Gaming</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="htmlweb.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="consoles.html">Consoles</a>
+                <a href="accessories.html">Accessories</a>
+                <a href="news.html" class="active">News</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search news...">
+                </div>
+                
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge">0</span>
+                </div>
+                
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- NEWS HERO SECTION -->
+    <section class="news-hero">
+        <div class="news-hero-content">
+            <div class="hero-category">Exclusive</div>
+            <h1>Cyber Nexus 2 Announced: Next-Gen RPG Experience</h1>
+            <p>Nexus Interactive reveals groundbreaking details about their upcoming sequel, featuring revolutionary AI companions and a fully dynamic open world that evolves based on player decisions.</p>
+            <div class="news-hero-meta">
+                <span><i class="far fa-user"></i> Alex Johnson</span>
+                <span><i class="far fa-clock"></i> 2 hours ago</span>
+                <span><i class="far fa-comment"></i> 42 comments</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FEATURED NEWS SECTION -->
+    <section class="news-section">
+        <div class="section-title">
+            <h2>Featured News</h2>
+            <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="featured-news">
+            <div class="featured-card">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Console Wars">
+                </div>
+                <div class="featured-content">
+                    <div class="news-category">Consoles</div>
+                    <h3 class="featured-title"><a href="#">Project Genesis: Next-Gen Console Leaks Reveal Revolutionary Features</a></h3>
+                    <p class="news-excerpt">Insider details about the upcoming console generation suggest groundbreaking hardware that could redefine gaming performance standards.</p>
+                    <div class="news-meta">
+                        <span><i class="far fa-clock"></i> 1 day ago</span>
+                        <span><i class="far fa-eye"></i> 15.4k views</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="featured-card">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="E-Sports">
+                </div>
+                <div class="featured-content">
+                    <div class="news-category">E-Sports</div>
+                    <h3 class="featured-title"><a href="#">Global E-Sports Championship Breaks Viewership Records</a></h3>
+                    <p class="news-excerpt">The international tournament finals attracted over 5 million concurrent viewers, setting new benchmarks for competitive gaming.</p>
+                    <div class="news-meta">
+                        <span><i class="far fa-clock"></i> 2 days ago</span>
+                        <span><i class="far fa-eye"></i> 23.7k views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- NEWS CATEGORIES SECTION -->
+    <section class="categories-section">
+        <div class="section-title">
+            <h2>News Categories</h2>
+            <a href="#" class="view-all">Browse All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <h3 class="category-title">Game Releases</h3>
+                <div class="category-count">128 Articles</div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <h3 class="category-title">Hardware</h3>
+                <div class="category-count">76 Articles</div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3 class="category-title">E-Sports</h3>
+                <div class="category-count">94 Articles</div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3 class="category-title">Reviews</h3>
+                <div class="category-count">63 Articles</div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="category-title">Industry News</h3>
+                <div class="category-count">115 Articles</div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <h3 class="category-title">Deals & Sales</h3>
+                <div class="category-count">88 Articles</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- LATEST NEWS SECTION -->
+    <section class="news-section">
+        <div class="section-title">
+            <h2>Latest News</h2>
+            <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="news-grid">
+            <div class="news-card">
+                <div class="news-image">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="VR Gaming">
+                </div>
+                <div class="news-content">
+                    <div class="news-category">Technology</div>
+                    <h3 class="news-title"><a href="#">Next-Gen VR Headset Promises Unprecedented Immersion</a></h3>
+                    <p class="news-excerpt">The new Horizon VR system boasts 8K resolution per eye and advanced haptic feedback technology that could revolutionize virtual reality gaming.</p>
+                    <div class="news-meta">
+                        <span><i class="far fa-clock"></i> 3 hours ago</span>
+                        <span><i class="far fa-comment"></i> 18</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <div class="news-image">
+                    <img src="images/pic4.jpg" alt="Mobile Gaming">
+                </div>
+                <div class="news-content">
+                    <div class="news-category">Mobile</div>
+                    <h3 class="news-title"><a href="#">Mobile Gaming Revenue Surpasses Console and PC Combined</a></h3>
+                    <p class="news-excerpt">Industry report shows mobile gaming now accounts for 52% of global gaming revenue, driven by innovative monetization strategies.</p>
+                    <div class="news-meta">
+                        <span><i class="far fa-clock"></i> 6 hours ago</span>
+                        <span><i class="far fa-comment"></i> 27</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <div class="news-image">
+                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Game Development">
+                </div>
+                <div class="news-content">
+                    <div class="news-category">Development</div>
+                    <h3 class="news-title"><a href="#">New Game Engine Promises Photorealistic Graphics in Real-Time</a></h3>
+                    <p class="news-excerpt">Quantum Engine 5.0 unveiled with revolutionary lighting and physics systems that could transform game development pipelines.</p>
+                    <div class="news-meta">
+                        <span><i class="far fa-clock"></i> 1 day ago</span>
+                        <span><i class="far fa-comment"></i> 42</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <div class="news-image">
+                    <img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Game Update">
+                </div>
+                <div class="news-content">
+                    <div class="news-category">Updates</div>
+                    <h3 class="news-title"><a href="#">Massive Free Expansion Announced for 'Eternal Realms'</a></h3>
+                    <p class="news-excerpt">The popular MMORPG will receive its largest content update yet, adding two new continents and raising the level cap to 100.</p>
+                    <div class="news-meta">
+                        <span><i class="far fa-clock"></i> 1 day ago</span>
+                        <span><i class="far fa-comment"></i> 89</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <div class="news-image">
+                    <img src="https://images.unsplash.com/photo-1511882150382-421056c89033?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Indie Game">
+                </div>
+                <div class="news-content">
+                    <div class="news-category">Indie Games</div>
+                    <h3 class="news-title"><a href="#">Indie Gem 'Stellar Drifter' Sells 500k Copies in First Week</a></h3>
+                    <p class="news-excerpt">The space exploration title from a small studio has become an unexpected hit, praised for its innovative gameplay and emotional storytelling.</p>
+                    <div class="news-meta">
+                        <span><i class="far fa-clock"></i> 2 days ago</span>
+                        <span><i class="far fa-comment"></i> 63</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <div class="news-image">
+                    <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80" alt="Retro Gaming">
+                </div>
+                <div class="news-content">
+                    <div class="news-category">Retro</div>
+                    <h3 class="news-title"><a href="#">Classic RPG Series Getting Full Remake Trilogy</a></h3>
+                    <p class="news-excerpt">The beloved 90s RPG franchise will return with completely remade versions using modern engines while preserving the original stories.</p>
+                    <div class="news-meta">
+                        <span><i class="far fa-clock"></i> 2 days ago</span>
+                        <span><i class="far fa-comment"></i> 105</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- TRENDING NEWS SECTION -->
+    <section class="news-section trending-news">
+        <div class="section-title">
+            <h2>Trending Now</h2>
+            <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="trending-grid">
+            <div class="trending-card">
+                <div class="trending-number">1</div>
+                <div class="trending-content">
+                    <h3 class="trending-title"><a href="#">Controversial Microtransaction System in AAA Title Sparks Outrage</a></h3>
+                    <div class="trending-meta">2.4k views • 312 comments</div>
+                </div>
+            </div>
+            
+            <div class="trending-card">
+                <div class="trending-number">2</div>
+                <div class="trending-content">
+                    <h3 class="trending-title"><a href="#">Leaked Documents Reveal Next Nintendo Console Specs</a></h3>
+                    <div class="trending-meta">1.9k views • 187 comments</div>
+                </div>
+            </div>
+            
+            <div class="trending-card">
+                <div class="trending-number">3</div>
+                <div class="trending-content">
+                    <h3 class="trending-title"><a href="#">Game Preservationists Unlock Lost Content from Classic Titles</a></h3>
+                    <div class="trending-meta">1.7k views • 156 comments</div>
+                </div>
+            </div>
+            
+            <div class="trending-card">
+                <div class="trending-number">4</div>
+                <div class="trending-content">
+                    <h3 class="trending-title"><a href="#">Popular Streamer Signs $50M Exclusive Deal with Platform</a></h3>
+                    <div class="trending-meta">1.5k views • 243 comments</div>
+                </div>
+            </div>
+            
+            <div class="trending-card">
+                <div class="trending-number">5</div>
+                <div class="trending-content">
+                    <h3 class="trending-title"><a href="#">Upcoming Battle Royale Game Announces Cross-Platform Play</a></h3>
+                    <div class="trending-meta">1.3k views • 98 comments</div>
+                </div>
+            </div>
+            
+            <div class="trending-card">
+                <div class="trending-number">6</div>
+                <div class="trending-content">
+                    <h3 class="trending-title"><a href="#">Massive Security Breach at Major Publisher, User Data Compromised</a></h3>
+                    <div class="trending-meta">1.2k views • 321 comments</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- NEWSLETTER SECTION -->
+    <section class="newsletter">
+        <h3>Stay Updated with Gaming News</h3>
+        <p>Subscribe to our newsletter and get the latest gaming news, reviews, and exclusive deals delivered to your inbox.</p>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button>Subscribe</button>
+        </div>
+    </section>
+    
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>Nexus Gaming</h4>
+                <p style="color: var(--secondary); margin-bottom: 1.5rem;">Your ultimate destination for all gaming needs. We offer the latest games, consoles, and accessories at competitive prices.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="htmlweb.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="games.html"><i class="fas fa-chevron-right"></i> Games</a></li>
+                    <li><a href="news.html"><i class="fas fa-chevron-right"></i> Gaming News</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Special Offers</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>News Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Game Releases</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Hardware</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> E-Sports</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Reviews</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Industry News</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> 123 Gaming Street, Virtual City</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i> +1 (555) 123-4567</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> news@nexusgaming.com</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 10PM</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Sat-Sun: 10AM - 8PM</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Nexus Gaming Store. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: var(--accent);"></i> for Gamers</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile navigation toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Newsletter form submission
+        document.querySelector('.newsletter-form button').addEventListener('click', function() {
+            const emailInput = document.querySelector('.newsletter-form input');
+            if (emailInput.value && emailInput.value.includes('@')) {
+                emailInput.value = '';
+                this.textContent = 'Subscribed!';
+                this.style.background = 'var(--success)';
+
+                setTimeout(() => {
+                    this.textContent = 'Subscribe';
+                    this.style.background = '';
+                }, 2000);
+            } else {
+                emailInput.style.borderColor = '#ff7675';
+                setTimeout(() => {
+                    emailInput.style.borderColor = '';
+                }, 2000);
+            }
+        });
+
+        // News card hover effects
+        const newsCards = document.querySelectorAll('.news-card, .featured-card');
+        newsCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = '';
+            });
+        });
+    </script>
+</body>
+</html>
