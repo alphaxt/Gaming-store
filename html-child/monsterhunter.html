@@ -6,240 +6,29 @@
     <title>Monster Hunter Wilds - Nexus Gaming Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script defer src ="script.js"></script>
-    <style>
-        :root {
-            --primary: #e74c3c;
-            --secondary: #ff7675;
-            --dark: #2d0606;
-            --darker: #1a0303;
-            --light: #f8f9fa;
-            --accent: #ff3838;
-            --warning: #fdcb6e;
-            --success: #00b894;
-        }
-        body {
-            background: linear-gradient(135deg, var(--darker), var(--dark));
-            color: var(--light);
-            min-height: 100vh;
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(circle at 20% 30%, rgba(231, 76, 60, 0.12) 0%, transparent 40%),
-                radial-gradient(circle at 80% 70%, rgba(255, 118, 117, 0.10) 0%, transparent 40%);
-            z-index: -1;
-        }
-        header {
-            background: rgba(45, 6, 6, 0.92);
-            backdrop-filter: blur(10px);
-            padding: 1rem 5%;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            border-bottom: 1px solid rgba(231,76,60,0.13);
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            background: linear-gradient(to right, var(--accent), var(--secondary));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            cursor: pointer;
-        }
-        .logo i {
-            font-size: 2rem;
-        }
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        .nav-links a {
-            color: var(--light);
-            text-decoration: none;
-            font-weight: 500;
-            position: relative;
-            padding: 0.5rem 0;
-            transition: color 0.3s ease;
-        }
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--accent);
-            transition: width 0.3s ease;
-        }
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-        .nav-actions {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
-        .search-container {
-            position: relative;
-        }
-        .search-container input {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(231,76,60,0.13);
-            border-radius: 50px;
-            padding: 0.5rem 1rem 0.5rem 2.5rem;
-            color: var(--light);
-            outline: none;
-            transition: all 0.3s ease;
-            width: 200px;
-        }
-        .search-container input:focus {
-            width: 250px;
-            border-color: var(--accent);
-        }
-        .search-container i {
-            position: absolute;
-            left: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--secondary);
-        }
-        .cart {
-            position: relative;
-            cursor: pointer;
-            font-size: 1.3rem;
-            color: var(--light);
-            transition: color 0.3s ease;
-        }
-        .cart:hover {
-            color: var(--accent);
-        }
-        .cart-badge {
-            position: absolute;
-            top: -8px;
-            right: -8px;
-            background: var(--warning);
-            color: var(--darker);
-            font-size: 0.7rem;
-            font-weight: bold;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .mobile-toggle {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-        .product-section {
-            max-width: 700px;
-            margin: 3rem auto 2rem auto;
-            background: rgba(255,255,255,0.04);
-            border-radius: 15px;
-            box-shadow: 0 8px 24px rgba(231,76,60,0.08);
-            border: 1px solid rgba(231,76,60,0.13);
-            padding: 2rem 2.5rem;
-        }
-        .product-section h2 {
-            background: linear-gradient(to right, var(--accent), var(--secondary));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            font-size: 2.2rem;
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
-        .product-section img {
-            width: 100%;
-            max-width: 350px;
-            display: block;
-            margin: 1.5rem auto;
-            border-radius: 12px;
-            background: #fff;
-        }
-        .product-info {
-            color: var(--light);
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-        .product-price {
-            color: var(--accent);
-            font-size: 1.3rem;
-            font-weight: bold;
-            margin-bottom: 1.2rem;
-        }
-        .add-to-cart, .buy-now {
-            background: var(--primary);
-            color: #fff;
-            border: none;
-            border-radius: 30px;
-            padding: 0.7rem 2rem;
-            margin: 0.2rem 0.2rem;
-            font-weight: 600;
-            cursor: pointer;
-            font-size: 1.1rem;
-            transition: background 0.2s, transform 0.2s;
-        }
-        .add-to-cart:hover, .buy-now:hover {
-            background: var(--accent);
-            transform: scale(1.05);
-        }
-        footer {
-            background: var(--darker);
-            color: var(--secondary);
-            text-align: center;
-            padding: 2rem 0 1rem 0;
-            margin-top: 3rem;
-            border-top: 1px solid rgba(231,76,60,0.13);
-        }
-        @media (max-width: 700px) {
-            .product-section { padding: 1rem 0.5rem; }
-        }
-    </style>
+    <link rel="stylesheet" href="styles-child/monsterhunterstyle.css">
+   
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo" onclick="window.location.href='htmlweb.html'" title="Go to Home">
+            <div class="logo" onclick="window.location.href='index.html'" title="Go to Home">
                 <i class="fas fa-gamepad"></i>
                 <span>Nexus Gaming</span>
             </div>
             <div class="nav-links">
-                <a href="htmlweb.html">Home</a>
-                <a href="games.html">Games</a>
-                <a href="consoles.html">Consoles</a>
-                <a href="accessories.html">Accessories</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="html-child/games.html">Games</a>
+                <a href="html-child/consoles.html">Consoles</a>
+                <a href="html-child/accessories.html">Accessories</a>
+                <a href="html-child/contact.html">Contact</a>
             </div>
             <div class="nav-actions">
                 <div class="search-container">
                     <i class="fas fa-search"></i>
                     <input type="text" placeholder="Search...">
                 </div>
-                <div class="cart" onclick="window.location.href='cart.html'">
+                <div class="cart" onclick="window.location.href='html-child/cart.html'">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-badge">0</span>
                 </div>
