@@ -1,0 +1,544 @@
+{
+  "meta": {
+    "store_name": "Nexus Gaming Store",
+    "version": "1.0.0",
+    "last_updated": "2025-01-01",
+    "currency": "USD",
+    "developer": "Muhammad Danish",
+    "license": "MIT"
+  },
+  "games": [
+    {
+      "id": "black-myth-wukong",
+      "name": "Black Myth: Wukong",
+      "price": 59.99,
+      "currency": "USD",
+      "category": "games",
+      "platforms": ["PC", "PS5"],
+      "image": "images/black_myth.jpg",
+      "page": "html-child/black_myth.html",
+      "description": "Black Myth: Wukong is an action RPG rooted in Chinese mythology. Play as the Monkey King and embark on an epic journey filled with challenging encounters and a rich narrative based on the classic novel 'Journey to the West'.",
+      "features": [
+        "Based on the classic Chinese novel 'Journey to the West'",
+        "Stunning visuals powered by Unreal Engine 5",
+        "Fluid combat with staff-based martial arts",
+        "Transformation abilities inspired by mythology",
+        "Rich storytelling and character development"
+      ],
+      "system_requirements": {
+        "os": "Windows 10 64-bit",
+        "processor": "Intel Core i5-8400 / AMD Ryzen 5 3600",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA GTX 1060 6GB / AMD Radeon RX 580 8GB",
+        "storage": "130 GB available space"
+      },
+      "tags": ["Action", "RPG", "Mythology", "Adventure"],
+      "rating": 4.8,
+      "release_year": 2024
+    },
+    {
+      "id": "elden-ring",
+      "name": "Elden Ring",
+      "price": 69.99,
+      "currency": "USD",
+      "category": "games",
+      "platforms": ["PC", "PS5", "Xbox"],
+      "image": "images/elden_ring.jpg",
+      "page": "html-child/elden_ring.html",
+      "description": "Elden Ring is an action RPG developed by FromSoftware and published by Bandai Namco Entertainment. Set in the Lands Between, you'll embark on an epic journey through a vast open world filled with challenging enemies, intricate dungeons, and a rich lore crafted by Hidetaka Miyazaki and George R.R. Martin.",
+      "features": [
+        "Vast open world exploration",
+        "Deep character customization",
+        "Challenging combat mechanics",
+        "Cooperative and competitive multiplayer",
+        "Epic boss battles"
+      ],
+      "system_requirements": {
+        "os": "Windows 10",
+        "processor": "Intel Core i5-8400 / AMD Ryzen 3 3300X",
+        "memory": "12 GB RAM",
+        "graphics": "NVIDIA GTX 1060 3GB / AMD Radeon RX 580 4GB",
+        "storage": "60 GB available space"
+      },
+      "tags": ["Action", "RPG", "Open World", "Souls-like"],
+      "rating": 4.9,
+      "release_year": 2022
+    },
+    {
+      "id": "star-wars-jedi-survivor",
+      "name": "Star Wars Jedi: Survivor",
+      "price": 59.99,
+      "currency": "USD",
+      "category": "games",
+      "platforms": ["PS5", "Xbox", "PC"],
+      "image": "images/star_wars.jpg",
+      "page": "html-child/star_wars.html",
+      "description": "Star Wars Jedi: Survivor is an action-adventure game developed by Respawn Entertainment. Continue Cal Kestis's journey as he explores new worlds, masters new abilities, and faces dangerous enemies in this thrilling sequel to Star Wars Jedi: Fallen Order.",
+      "features": [
+        "Expanded lightsaber combat with new stances",
+        "Explore diverse planets and environments",
+        "New Force abilities and powers",
+        "Engaging story set in the Star Wars universe",
+        "Improved graphics and gameplay mechanics"
+      ],
+      "system_requirements": {
+        "os": "Windows 10 64-bit",
+        "processor": "Intel Core i7-7700 / AMD Ryzen 5 1400",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA GTX 1070 / AMD Radeon RX 580",
+        "storage": "155 GB available space"
+      },
+      "tags": ["Action", "Adventure", "Star Wars", "Story-Driven"],
+      "rating": 4.7,
+      "release_year": 2023
+    },
+    {
+      "id": "dragons-dogma-2",
+      "name": "Dragon's Dogma 2",
+      "price": 69.99,
+      "currency": "USD",
+      "category": "games",
+      "platforms": ["PC", "PS5"],
+      "image": "images/dragons_dogma.jpg",
+      "page": "html-child/dragons_dogma.html",
+      "discount": {
+        "original_price": 59.99,
+        "discount_percent": 0
+      },
+      "description": "Dragon's Dogma 2 is an action RPG that offers thrilling, action-packed combat combined with an engaging, dramatic narrative. Craft your own Arisen and embark on an adventure in a world where decisions and combat prowess influence the story's outcome.",
+      "features": [
+        "Deep character customization system",
+        "Unique Pawn companion system",
+        "Dynamic combat with multiple vocations",
+        "Vast open world to explore",
+        "Epic dragon encounters and boss battles"
+      ],
+      "system_requirements": {
+        "os": "Windows 10 64-bit",
+        "processor": "Intel Core i5-10600 / AMD Ryzen 5 3600",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA GTX 1070 / AMD Radeon RX 5500 XT",
+        "storage": "150 GB available space"
+      },
+      "tags": ["Action", "RPG", "Open World", "Fantasy"],
+      "rating": 4.6,
+      "release_year": 2024
+    },
+    {
+      "id": "tekken-8",
+      "name": "Tekken 8",
+      "price": 69.99,
+      "currency": "USD",
+      "category": "games",
+      "platforms": ["PS5", "Xbox", "PC"],
+      "image": "images/tekken8.jpg",
+      "page": "html-child/tekken8.html",
+      "description": "Tekken 8 is the latest installment in the legendary fighting game franchise. Experience the next generation of combat with stunning visuals powered by Unreal Engine 5, new fighters, and enhanced gameplay mechanics. The Mishima bloodline continues its epic saga.",
+      "features": [
+        "32+ playable characters with unique fighting styles",
+        "Story mode continuing the Mishima saga",
+        "New 'Heat' system for aggressive combat",
+        "Online multiplayer with ranked matches",
+        "Stunning graphics powered by Unreal Engine 5"
+      ],
+      "system_requirements": {
+        "os": "Windows 10 64-bit",
+        "processor": "Intel Core i5-6600K / AMD Ryzen 5 1600",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GTX 1050Ti / AMD Radeon R9 380X",
+        "storage": "100 GB available space"
+      },
+      "tags": ["Fighting", "Multiplayer", "Competitive", "3D Fighter"],
+      "rating": 4.8,
+      "release_year": 2024
+    },
+    {
+      "id": "zelda-tears-of-kingdom",
+      "name": "The Legend of Zelda: Tears of the Kingdom",
+      "price": 69.99,
+      "currency": "USD",
+      "category": "games",
+      "platforms": ["Switch"],
+      "image": "images/zelda.jpg",
+      "page": "html-child/zelda.html",
+      "description": "The Legend of Zelda: Tears of the Kingdom is the highly anticipated sequel to Breath of the Wild. Explore the skies above Hyrule and uncover new mysteries as Link embarks on a new adventure. Use creative abilities to solve puzzles and defeat enemies in this expansive open-world game.",
+      "features": [
+        "Explore vast landscapes and floating islands",
+        "New abilities like Fuse and Ultrahand",
+        "Engaging story continuing from Breath of the Wild",
+        "Creative puzzle-solving mechanics",
+        "Beautiful art style and immersive world"
+      ],
+      "platform_info": {
+        "exclusive": "Nintendo Switch",
+        "enhanced": "Nintendo Switch OLED",
+        "modes": ["handheld", "docked"],
+        "file_size": "16 GB"
+      },
+      "tags": ["Action", "Adventure", "Open World", "Puzzle"],
+      "rating": 4.9,
+      "release_year": 2023
+    },
+    {
+      "id": "hollow-knight",
+      "name": "Hollow Knight",
+      "price": 14.99,
+      "currency": "USD",
+      "discount": {
+        "original_price": 19.99,
+        "discount_percent": 25
+      },
+      "category": "games",
+      "platforms": ["PC", "Switch"],
+      "image": "images/hollow_knight.jpg",
+      "page": "html-child/hollow_knight.html",
+      "description": "Hollow Knight is a classically styled 2D action adventure across a vast interconnected world. Explore twisting caverns, ancient cities and deadly wastes; battle tainted creatures and befriend bizarre bugs; and solve ancient mysteries at the kingdom's heart.",
+      "features": [
+        "Beautiful hand-drawn art style",
+        "Over 130 enemies and 30+ epic bosses",
+        "Challenging platforming with fluid controls",
+        "Deep combat system with nail upgrades",
+        "Atmospheric soundtrack by Christopher Larkin"
+      ],
+      "system_requirements": {
+        "os": "Windows 7",
+        "processor": "Intel Core 2 Duo E5200",
+        "memory": "4 GB RAM",
+        "graphics": "GeForce 9800GTX+ (1GB)",
+        "storage": "9 GB available space"
+      },
+      "tags": ["Indie", "Metroidvania", "2D", "Platformer"],
+      "rating": 4.9,
+      "release_year": 2017
+    },
+    {
+      "id": "monster-hunter-wilds",
+      "name": "Monster Hunter Wilds",
+      "price": 3000,
+      "currency": "PKR",
+      "category": "games",
+      "platforms": ["PC", "PS5", "Xbox"],
+      "image": "images/monster_hunter.jpg",
+      "page": "html-child/monsterhunter.html",
+      "description": "Embark on an epic adventure in Monster Hunter Wilds! Hunt massive beasts, craft powerful gear, and explore breathtaking landscapes in this action-packed RPG.",
+      "features": [
+        "Hunt massive beasts",
+        "Craft powerful gear",
+        "Explore breathtaking landscapes",
+        "Action-packed RPG gameplay"
+      ],
+      "tags": ["Action", "RPG", "Hunting", "Co-op"],
+      "rating": 4.7,
+      "release_year": 2025
+    },
+    {
+      "id": "counter-strike-2",
+      "name": "Counter Strike 2",
+      "price": 6000,
+      "currency": "PKR",
+      "category": "games",
+      "platforms": ["PC", "Xbox"],
+      "image": "images/pic7.jpg",
+      "page": "html-child/counterstrike2.html",
+      "description": "Counter Strike 2 is the next evolution of the legendary tactical shooter, featuring new maps, improved graphics, and intense multiplayer action.",
+      "features": [
+        "Classic bomb defusal mode",
+        "Hostage rescue missions",
+        "Tactical team-based gameplay",
+        "Improved graphics and new maps"
+      ],
+      "system_requirements": {
+        "os": "Windows 10",
+        "processor": "Intel Core i5-2500K / AMD FX-6300",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GTX 960 / AMD Radeon R9 280",
+        "storage": "20 GB available space"
+      },
+      "tags": ["FPS", "Tactical", "Multiplayer", "Competitive"],
+      "rating": 4.8,
+      "release_year": 2023
+    },
+    {
+      "id": "gta-5",
+      "name": "Grand Theft Auto V",
+      "price": 7000,
+      "currency": "PKR",
+      "category": "games",
+      "platforms": ["PS5", "Xbox", "PC"],
+      "image": "images/pic6.jpg",
+      "page": "html-child/gta5.html",
+      "description": "Experience the critically acclaimed open-world action of GTA 5. Explore Los Santos, complete missions, and enjoy endless multiplayer mayhem in GTA Online.",
+      "features": [
+        "Massive open world",
+        "Story mode & GTA Online",
+        "Vehicles, weapons, and customization",
+        "Stunning graphics and immersive gameplay"
+      ],
+      "tags": ["Action", "Open World", "Multiplayer", "Crime"],
+      "rating": 4.9,
+      "release_year": 2013
+    },
+    {
+      "id": "civilization-vii",
+      "name": "Civilization VII",
+      "price": 7000,
+      "currency": "PKR",
+      "category": "games",
+      "platforms": ["PC"],
+      "image": "images/civilization_vii.jpg",
+      "page": "html-child/civilization.html",
+      "description": "Civilization VII is a turn-based strategy game where players build and expand their empire through the ages.",
+      "features": [
+        "Turn-based strategy gameplay",
+        "Build and expand civilizations",
+        "Multiple victory conditions",
+        "Lead from Stone Age to Information Age"
+      ],
+      "system_requirements": {
+        "os": "Windows 10",
+        "processor": "Intel Core i3-3210 / AMD Phenom II X4 910",
+        "memory": "4 GB RAM",
+        "graphics": "NVIDIA GTX 450 / AMD Radeon HD 5570",
+        "storage": "12 GB available space"
+      },
+      "tags": ["Strategy", "Turn-Based", "Historical", "4X"],
+      "rating": 4.6,
+      "release_year": 2025
+    },
+    {
+      "id": "kingdom-come-deliverance",
+      "name": "Kingdom Come: Deliverance",
+      "price": 5500,
+      "currency": "PKR",
+      "category": "games",
+      "platforms": ["PC", "PS5"],
+      "image": "images/kingdom_come.jpg",
+      "page": "html-child/kingdomcome.html",
+      "description": "Immerse yourself in a story-driven open-world RPG set in the Holy Roman Empire. Experience realistic medieval combat, a living world, and a gripping narrative.",
+      "features": [
+        "Historically accurate setting",
+        "Realistic sword fighting",
+        "Deep role-playing mechanics",
+        "Expansive open world"
+      ],
+      "tags": ["RPG", "Medieval", "Open World", "Historical"],
+      "rating": 4.5,
+      "release_year": 2018
+    },
+    {
+      "id": "free-fire",
+      "name": "Free Fire",
+      "price": 0,
+      "currency": "USD",
+      "category": "games",
+      "platforms": ["PC", "Mobile", "PS5"],
+      "image": "images/pic10.jpg",
+      "page": "html-child/freefire.html",
+      "description": "Free Fire is a fast-paced battle royale game where you fight to be the last survivor. Drop in, gear up, and outlast your opponents in intense 10-minute matches!",
+      "features": [
+        "50-player battle royale",
+        "Unique characters and abilities",
+        "Customizable weapons and skins",
+        "Team up with friends"
+      ],
+      "tags": ["Battle Royale", "Free-to-Play", "Multiplayer", "Mobile"],
+      "rating": 4.3,
+      "release_year": 2017,
+      "free_to_play": true
+    }
+  ],
+  "consoles": [
+    {
+      "id": "nintendo-switch-oled",
+      "name": "Nintendo Switch OLED",
+      "price": 349.99,
+      "currency": "USD",
+      "category": "consoles",
+      "image": "images/nintendo_switch_oled.jpg",
+      "description": "Nintendo Switch OLED model with enhanced screen and audio",
+      "features": [
+        "7-inch OLED screen",
+        "Enhanced audio",
+        "64GB internal storage",
+        "Adjustable stand",
+        "Dock with wired LAN port"
+      ],
+      "tags": ["Console", "Handheld", "Nintendo"]
+    },
+    {
+      "id": "nintendo-switch-gray",
+      "name": "Nintendo Switch",
+      "price": 299.99,
+      "currency": "USD",
+      "category": "consoles",
+      "image": "images/nintendo_switch_gray.jpg",
+      "description": "Nintendo Switch with Joy-Con controllers",
+      "features": [
+        "6.2-inch LCD screen",
+        "32GB internal storage",
+        "TV and handheld mode",
+        "Joy-Con controllers included"
+      ],
+      "tags": ["Console", "Handheld", "Nintendo"]
+    },
+    {
+      "id": "nintendo-switch-lite",
+      "name": "Nintendo Switch Lite",
+      "price": 199.99,
+      "currency": "USD",
+      "category": "consoles",
+      "image": "images/nintendo_switch_lite.jpg",
+      "description": "Compact Nintendo Switch for handheld gaming",
+      "features": [
+        "5.5-inch touchscreen",
+        "Lightweight design",
+        "Handheld mode only",
+        "Built-in controls"
+      ],
+      "tags": ["Console", "Handheld", "Nintendo"]
+    }
+  ],
+  "accessories": [
+    {
+      "id": "gaming-headset",
+      "name": "Gaming Headset",
+      "price": 79.99,
+      "currency": "USD",
+      "category": "accessories",
+      "image": "images/headset.jpg",
+      "description": "Premium gaming headset with surround sound",
+      "features": [
+        "7.1 surround sound",
+        "Noise-cancelling microphone",
+        "Comfortable ear cushions",
+        "RGB lighting"
+      ],
+      "tags": ["Audio", "Peripheral", "RGB"]
+    },
+    {
+      "id": "gaming-keyboard",
+      "name": "Mechanical Gaming Keyboard",
+      "price": 129.99,
+      "currency": "USD",
+      "category": "accessories",
+      "image": "images/keyboard.jpg",
+      "description": "Mechanical keyboard with customizable RGB",
+      "features": [
+        "Mechanical switches",
+        "Customizable RGB backlighting",
+        "Programmable keys",
+        "Aluminum frame"
+      ],
+      "tags": ["Peripheral", "Mechanical", "RGB"]
+    },
+    {
+      "id": "gaming-mouse",
+      "name": "Gaming Mouse",
+      "price": 59.99,
+      "currency": "USD",
+      "category": "accessories",
+      "image": "images/mouse.jpg",
+      "description": "High-precision gaming mouse",
+      "features": [
+        "16000 DPI sensor",
+        "Programmable buttons",
+        "RGB lighting",
+        "Ergonomic design"
+      ],
+      "tags": ["Peripheral", "Precision", "RGB"]
+    },
+    {
+      "id": "gaming-controller",
+      "name": "Pro Controller",
+      "price": 69.99,
+      "currency": "USD",
+      "category": "accessories",
+      "image": "images/controller.jpg",
+      "description": "Professional gaming controller",
+      "features": [
+        "Wireless connectivity",
+        "Rechargeable battery",
+        "Customizable buttons",
+        "Ergonomic grip"
+      ],
+      "tags": ["Peripheral", "Wireless", "Controller"]
+    },
+    {
+      "id": "gaming-mousepad",
+      "name": "Extended Gaming Mousepad",
+      "price": 29.99,
+      "currency": "USD",
+      "category": "accessories",
+      "image": "images/mousepad.jpg",
+      "description": "Large extended mousepad for gaming setup",
+      "features": [
+        "Extended size",
+        "Non-slip rubber base",
+        "Water-resistant surface",
+        "Stitched edges"
+      ],
+      "tags": ["Peripheral", "Desk Mat"]
+    },
+    {
+      "id": "gaming-microphone",
+      "name": "USB Gaming Microphone",
+      "price": 89.99,
+      "currency": "USD",
+      "category": "accessories",
+      "image": "images/microphone.jpg",
+      "description": "Professional USB microphone for streaming",
+      "features": [
+        "USB connectivity",
+        "Pop filter included",
+        "Adjustable stand",
+        "Studio-quality audio"
+      ],
+      "tags": ["Audio", "Streaming", "USB"]
+    },
+    {
+      "id": "wireless-earbuds",
+      "name": "Gaming Earbuds",
+      "price": 49.99,
+      "currency": "USD",
+      "category": "accessories",
+      "image": "images/earbuds.jpg",
+      "description": "Wireless gaming earbuds with low latency",
+      "features": [
+        "Low latency mode",
+        "Bluetooth 5.0",
+        "Touch controls",
+        "Charging case included"
+      ],
+      "tags": ["Audio", "Wireless", "Mobile"]
+    }
+  ],
+  "categories": [
+    {
+      "id": "games",
+      "name": "Games",
+      "description": "Browse our extensive collection of video games",
+      "page": "html-child/games.html"
+    },
+    {
+      "id": "consoles",
+      "name": "Consoles",
+      "description": "Gaming consoles and systems",
+      "page": "html-child/consoles.html"
+    },
+    {
+      "id": "accessories",
+      "name": "Accessories",
+      "description": "Gaming peripherals and accessories",
+      "page": "html-child/accessories.html"
+    }
+  ],
+  "contact": {
+    "address": "123 Gaming Street, Virtual City",
+    "phone": "+1 (555) 123-4567",
+    "email": "support@nexusgaming.com",
+    "hours": {
+      "weekdays": "Mon-Fri: 9AM - 10PM",
+      "weekend": "Sat-Sun: 10AM - 8PM"
+    }
+  }
+}
