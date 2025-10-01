@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products JSON Usage Example - Nexus Gaming Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #e74c3c;
+            --secondary: #ff7675;
+            --dark: #2d0606;
+            --darker: #1a0303;
+            --light: #f8f9fa;
+            --accent: #ff3838;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--darker), var(--dark));
+            color: var(--light);
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--accent);
+            font-size: 2.5rem;
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--light);
+            opacity: 0.8;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-card {
+            background: rgba(45, 6, 6, 0.5);
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid rgba(231, 76, 60, 0.3);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: var(--light);
+            opacity: 0.8;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: rgba(45, 6, 6, 0.5);
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 2px solid rgba(231, 76, 60, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(231, 76, 60, 0.3);
+            border-color: var(--accent);
+        }
+
+        .product-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--light);
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent);
+            margin: 0.5rem 0;
+        }
+
+        .product-platforms {
+            display: flex;
+            gap: 0.5rem;
+            margin: 0.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .platform-tag {
+            background: var(--accent);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        .product-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin: 0.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: rgba(255, 118, 117, 0.3);
+            color: var(--light);
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+        }
+
+        .loading {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 3rem;
+        }
+
+        .error {
+            background: rgba(255, 0, 0, 0.2);
+            border: 2px solid red;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            color: #ff6b6b;
+        }
+
+        .code-example {
+            background: rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(231, 76, 60, 0.3);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            overflow-x: auto;
+        }
+
+        .code-example pre {
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+        }
+
+        .free-badge {
+            background: var(--success, #00b894);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-left: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-gamepad"></i> Products JSON Usage Example</h1>
+        <p class="subtitle">Demonstrating how to use products.json in the Gaming Store</p>
+
+        <div id="stats" class="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="totalGames">-</div>
+                <div class="stat-label">Games</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalConsoles">-</div>
+                <div class="stat-label">Consoles</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalAccessories">-</div>
+                <div class="stat-label">Accessories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalProducts">-</div>
+                <div class="stat-label">Total Products</div>
+            </div>
+        </div>
+
+        <div class="code-example">
+            <h3 style="margin-bottom: 1rem; color: var(--accent);">JavaScript Code to Load JSON:</h3>
+            <pre>
+// Fetch and load products.json
+fetch('products.json')
+    .then(response => response.json())
+    .then(data => {
+        console.log('Store:', data.meta.store_name);
+        console.log('Total Games:', data.games.length);
+        console.log('Total Consoles:', data.consoles.length);
+        console.log('Total Accessories:', data.accessories.length);
+        
+        // Display products
+        displayProducts(data);
+    })
+    .catch(error => console.error('Error loading products:', error));
+            </pre>
+        </div>
+
+        <div id="content" class="loading">
+            <i class="fas fa-spinner fa-spin"></i> Loading products...
+        </div>
+    </div>
+
+    <script>
+        // Fetch and display products from JSON
+        async function loadProducts() {
+            try {
+                const response = await fetch('products.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                
+                // Update stats
+                document.getElementById('totalGames').textContent = data.games.length;
+                document.getElementById('totalConsoles').textContent = data.consoles.length;
+                document.getElementById('totalAccessories').textContent = data.accessories.length;
+                document.getElementById('totalProducts').textContent = 
+                    data.games.length + data.consoles.length + data.accessories.length;
+
+                // Display products
+                displayProducts(data);
+                
+            } catch (error) {
+                console.error('Error loading products:', error);
+                document.getElementById('content').innerHTML = `
+                    <div class="error">
+                        <h2><i class="fas fa-exclamation-triangle"></i> Error Loading Products</h2>
+                        <p>${error.message}</p>
+                        <p>Make sure products.json is in the same directory as this HTML file.</p>
+                    </div>
+                `;
+            }
+        }
+
+        function displayProducts(data) {
+            const content = document.getElementById('content');
+            let html = '';
+
+            // Display Games
+            html += `
+                <div class="section">
+                    <h2 class="section-title"><i class="fas fa-gamepad"></i> Games (${data.games.length})</h2>
+                    <div class="products-grid">
+            `;
+            
+            data.games.forEach(game => {
+                const priceDisplay = game.currency === 'USD' 
+                    ? `$${game.price}` 
+                    : `${game.price} ${game.currency}`;
+                const freeBadge = game.free_to_play ? '<span class="free-badge">FREE</span>' : '';
+                
+                html += `
+                    <div class="product-card">
+                        <h3 class="product-title">${game.name}</h3>
+                        <div class="product-price">${priceDisplay}${freeBadge}</div>
+                        <div class="product-platforms">
+                            ${game.platforms.map(p => `<span class="platform-tag">${p}</span>`).join('')}
+                        </div>
+                        <p style="margin: 1rem 0; opacity: 0.8; font-size: 0.9rem;">
+                            ${game.description.substring(0, 100)}...
+                        </p>
+                        <div class="product-tags">
+                            ${game.tags.map(t => `<span class="tag">${t}</span>`).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+            
+            html += `</div></div>`;
+
+            // Display Consoles
+            html += `
+                <div class="section">
+                    <h2 class="section-title"><i class="fas fa-tv"></i> Consoles (${data.consoles.length})</h2>
+                    <div class="products-grid">
+            `;
+            
+            data.consoles.forEach(console => {
+                html += `
+                    <div class="product-card">
+                        <h3 class="product-title">${console.name}</h3>
+                        <div class="product-price">$${console.price}</div>
+                        <p style="margin: 1rem 0; opacity: 0.8; font-size: 0.9rem;">
+                            ${console.description}
+                        </p>
+                        <div class="product-tags">
+                            ${console.tags.map(t => `<span class="tag">${t}</span>`).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+            
+            html += `</div></div>`;
+
+            // Display Accessories
+            html += `
+                <div class="section">
+                    <h2 class="section-title"><i class="fas fa-keyboard"></i> Accessories (${data.accessories.length})</h2>
+                    <div class="products-grid">
+            `;
+            
+            data.accessories.forEach(accessory => {
+                html += `
+                    <div class="product-card">
+                        <h3 class="product-title">${accessory.name}</h3>
+                        <div class="product-price">$${accessory.price}</div>
+                        <p style="margin: 1rem 0; opacity: 0.8; font-size: 0.9rem;">
+                            ${accessory.description}
+                        </p>
+                        <div class="product-tags">
+                            ${accessory.tags.map(t => `<span class="tag">${t}</span>`).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+            
+            html += `</div></div>`;
+
+            content.innerHTML = html;
+        }
+
+        // Load products when page loads
+        loadProducts();
+    </script>
+</body>
+</html>
