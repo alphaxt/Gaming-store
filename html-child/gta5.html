@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GTA 5 - Gaming Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles-child/gta5style.css">
+    <link rel="stylesheet" href="../styles-child/gta5style.css">
     
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo" onclick="window.location.href='index.html'" title="Go to Home">
+            <div class="logo" onclick="window.location.href='../index.html'" title="Go to Home">
                 <i class="fas fa-gamepad"></i>
                 <span>Nexus Gaming</span>
             </div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html-child/games.html">Games</a></li>
-                <li><a href="html-child/consoles.html">Consoles</a></li>
-                <li><a href="html-child/accessories.html">Accessories</a></li>
-                <li><a href="html-child/contact.html">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="cart" onclick="window.location.href='html-child/cart.html'">
+            <div class="cart" onclick="window.location.href='cart.html'">
                 🛒 <span class="cart-count">0</span>
             </div>
         </nav>
@@ -31,7 +31,7 @@
     <section class="game-details">
         <h1>Grand Theft Auto V (GTA 5)</h1>
         <p class="product-price">7,000 PKR</p>
-        <img src="images/pic6.jpg" alt="GTA 5">
+    <img src="../images/pic6.jpg" alt="GTA 5">
         <p>Experience the critically acclaimed open-world action of GTA 5. Explore Los Santos, complete missions, and enjoy endless multiplayer mayhem in GTA Online.</p>
         <h2>Features</h2>
         <ul>
@@ -44,8 +44,17 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Gaming Store. All Rights Reserved.</p>
+        <div class="footer-links-wrapper">
+            <ul class="footer-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2025 Nexus Gaming Store. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
